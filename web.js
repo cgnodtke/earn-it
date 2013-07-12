@@ -9,8 +9,8 @@ var pg = require('pg'),
 
 client = new pg.Client(connectionString);
 client.connect();
-query = client.query('CREATE TABLE visits (date date)');
-query.on('end',function() {client.end();});
+//query = client.query('CREATE TABLE visits (date date)');
+//query.on('end',function() {client.end();});
 
 app.get('/', function(request, response) {
 	var date = new Date();
