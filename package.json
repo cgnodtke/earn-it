@@ -1,0 +1,9 @@
+{
+  "name": "earn-it",
+  "version": "0.0.1",
+	"dependencies": {
+		"express": "2.5.11",
+		"pg": "2.1.0"
+	}
+}
+
