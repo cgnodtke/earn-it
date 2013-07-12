@@ -20,9 +20,9 @@ app.get('/', function(request, response) {
   query.on('row', function(result) {
 		console.log(result);
     if (!result) {
-			return res.send('No data found');
+			return response.send('No data found');
 		} else {
-				res.send('Visits today: ' + result.count);
+				response.send('Visits today: ' + result.count);
 		}
 	});
 });
