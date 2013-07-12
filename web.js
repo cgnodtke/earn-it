@@ -14,7 +14,7 @@ client.connect();
 
 app.get('/', function(request, response) {
 	var date = new Date();
-	client.query('INSERT INTO visits(date) VALUES($1)'. [date]);
+	client.query('INSERT INTO visits(date) VALUES($1)', [date]);
 
   query = client.query('SELECT COUNT(date) AS count FROM visits WHERE date = $1', [date]);
   query.on('row', function(result) {
