@@ -1,9 +1,11 @@
 {
+	"author": "Thomas Trenner, Christian Gnodtke"
   "name": "earn-it",
   "version": "0.0.1",
 	"dependencies": {
 		"express": "3.3.4",
-		"pg": "2.1.0"
+		"mongodb": "1.3.11",
+		"jade" : "0.27.2"
 	}
 }
 
